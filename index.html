@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/responsivemedias.css">
+    <script src="https://kit.fontawesome.com/5c8a3960ff.js" crossorigin="anonymous"></script>
+    <title>Caio Enrique | Portfólio</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h3 class="header_title">Caio Enrique</h3>
+        <h3 class="header_title2">Meu Portfólio</h3>
+        <nav class="nav_menu">
+            <ul>
+                <li><a class="link" href="#aboutme">Sobre mim</a></li>
+                <li><a class="link" href="#skills">Estudos</a></li>
+                <li><a class="link" href="#projects">Projetos</a></li>
+                <li><a class="link" href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SOBRE MIM -->
+    <main>
+
+        <section id="aboutme" class="about_me">
+            <div class="about_me_intro">
+                <h1 class="about_title">Olá! Eu me chamo <noscript>Caio Enrique.</noscript>
+                    <br> <span class="about_name" id="about_name"></span></h1>
+                <h2 class="about_subtitle">Aspirante a Desenvolvedor Full-Stack.</h2>
+                <p class="about_desc">Meu portfólio ainda está em desenvolvimento e visa mostrar meus estudos relacionados ao Full-Stack. Atualmente busco por uma oportunidade de ingressar na área e evoluir ainda mais, dessa forma, espero que gostem do meu trabalho!</p>
+                <div class="about_me_contact">
+                    <a href="https://github.com/caio3ms" target="_blank"><button><span>GitHub</span></button></a>
+                    <a href="https://www.linkedin.com/in/caio-enrique-346920248/" target="_blank"><button><span>LinkedIn</span></button></a>
+                </div>
+            </div>
+            <aside class="about_me_image" >
+                <img  data-tilt id="about_img" src="./imgs/image-main.jpg" alt="Ilustração de um jovem desenvolvedor programando.">
+            </aside>
+        </section>           
+
+        <section id="skills" class="skills">
+            <div class="skills_title">
+                <h2>ESTUDOS</h2>
+            </div>
+            <div class="skills_list">
+                <div class="skill_card">
+                    <div class="skill_icon"><i class="fa-brands fa-html5"></i></div>
+                    <div class="skill_name">HTML</div>
+                </div>
+                <div class="skill_card">
+                    <div class="skill_icon"><i class="fa-brands fa-css3-alt"></i></div>
+                    <div class="skill_name">CSS</div>
+                </div>
+                <div class="skill_card">
+                    <div class="skill_icon"><i class="fa-brands fa-square-js"></i></div>
+                    <div class="skill_name">JavaScript</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="projects_title">
+                <h2>PROJETOS</h2>
+            </div>
+            <div class="projects_list">
+                <div class="project_card">
+                    <div class="project_name">Calculadora</div>
+                    <p class="project_desc">Projeto pessoal onde foi desenvolvida através de HTML, CSS e JavaScript uma calculadora que realiza operações básicas.</p>
+                    <div class="project_tools">
+                        <ul class="project_tools_list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/caio3ms/js-calculator" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_name">To-Do List</div>
+                    <p class="project_desc">Projeto Pessoal onde foi desenvolvida através de HTML, CSS e JavaScript uma To Do List.</p>
+                    <div class="project_tools">
+                        <ul class="project_tools_list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="project_links">
+                        <a href="https://github.com/caio3ms/todo-list" target="_blank"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="project_card">
+                    <div class="project_name">Projeto 3</div>
+                    <p class="project_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        Nesciunt suscipit ipsam, neque veniam labore dolorum.</p>
+                    <div class="project_tools">
+                        <ul class="project_tools_list">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="project_links">
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="contact" id="contact">
+        <div class="contact_title">
+            <h2>CONTATO</h2>
+        </div>
+        <div class="tel_contact">
+            <i class="fa-brands fa-whatsapp"></i>
+            <p class="contact_text">(75) 99194-0714</p>
+        </div>
+        <div class="email_contact">
+            <i class="fa-solid fa-envelope"></i>
+            <p class="contact_text">caiomseara@gmail.com</p>
+        </div>
+        <div class="credits">
+            <p>Created by <a href="https://github.com/caio3ms" target="_blank">Caio Enrique</a></p>
+            <a href="https://www.freepik.com/free-vector/developer-activity-concept-illustration_7401752.htm#query=web%20development&position=8&from_view=search" target="_blank">Image by storyset</a> on Freepik
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+</body>
+</html>

@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    word-break: break-all;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+/* HEADER E NAV */
+header {
+    min-width: 100%;
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: rgba(56,90,100,0.2) 0px 2px 8px 0px;
+    position: sticky;
+    z-index: 99;
+    top: 0;
+}
+
+header h3{
+    font-size: 2rem;
+    margin:0 40px;
+    font-weight: 700;
+    color: #385a64;
+}
+
+.header_title2 {
+    display: none;
+}
+
+header nav {
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style-type: none;
+    text-decoration: none;
+    display: flex;
+    font-size: 1.2rem; 
+    margin-right: 40px;
+    gap: 2rem;
+}
+
+header nav button {
+    display: block;
+    background: none;
+    border: none;
+    width: 30px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #385a64;
+}
+
+header nav button:hover {
+    color: #00dfc0;
+}
+
+.link{
+    text-decoration: none;
+    color: #385a64;
+    position: relative;
+    font-weight: 500;
+}
+
+.link:hover, .link:focus {
+    color: #009c86;
+}
+
+.link::before {
+    content: "";
+    display: inline;
+    width: 0%;
+    height: 0.2em;
+    position: absolute;
+    bottom: 0;
+    background-color: #009c86;
+    transition: width 0.2s ease-in;
+  }
+
+.link:hover::before,
+.link:focus::before {
+  width: 100%;
+}
+
+/* ABOUT ME */
+.about_me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100%;
+    min-height: 600px;
+    padding: 0 10px;
+    gap: 0.5rem;
+    color: #385a64;
+}
+
+.about_me_intro{
+    display: flex;
+    flex-flow: column wrap;
+    width: 65%;
+    padding: 40px 50px;
+    gap: 15px;
+}
+
+.about_me_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.about_title {
+    font-size: 4.5rem;
+    font-weight: 700;
+}
+
+.about_subtitle {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.about_desc{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px; 
+    margin-bottom: 20px;
+}
+
+.about_me_contact {
+    width: 300px;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about_me_contact a {
+    margin: 0 10px;
+}
+
+#about_name {
+    color: #009c86;
+}
+
+#about_img{
+    width: 100%;
+}
+
+/* SKILLS */
+.skills{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 60px;
+    width: 100%;
+    min-height: 400px;
+}
+
+.skills_title {
+    font-size: 2rem;
+    color: #385a64;
+    margin-bottom: 20px;
+}
+
+.skills_list, .projects_list {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.skill_card {
+    width: 190px;
+    height: 254px;
+    border-radius: 5px;
+    background: #385a64;
+    box-shadow: rgba(56,90,100,0.8) 0px 2px 8px 0px;
+    transition: all 300ms;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill_icon {
+    font-size: 8rem;
+}
+
+.skill_name{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.skill_card:hover, .project_card:hover {
+    transform: scale(1.10);
+}
+
+/* PROJECTS */
+.projects {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    min-height: 500px;
+}
+
+.projects_title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #385a64;
+}
+
+.project_card {
+    background-color: #385a64;
+    color: white;
+    width: 300px;
+    gap: 1rem;
+    padding: 15px;
+    height: 340px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(56,90,100,0.8) 0px 2px 8px 0px;
+    transition: all 300ms;
+}
+
+.project_name {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    height: 15%;
+    font-weight: 700;
+}
+
+.project_desc{
+    text-align: justify;
+    font-weight: 400;
+    font-size: 20px;
+    height: 65%;
+}
+
+.project_tools_list{
+    height: 5%;
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.project_links{
+    height: 15%;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.project_links a{
+    text-decoration: none;
+    color: white;
+}
+
+.project_links a:hover{
+    color: #009c86;
+}
+
+/* CONTACT */
+.contact {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 0 auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 80%;
+    height: 300px;
+    background-color: #385a64;
+    box-shadow: rgba(56,90,100,1) 0px 2px 8px 0px;
+    justify-content: space-around;
+}
+
+.contact_title {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: white;
+}
+
+.tel_contact, .email_contact{
+    margin-bottom: 5px;
+    width: 300px;
+    font-size: 20px;
+    gap: 1rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.credits {
+    margin-top: 25px;
+    text-align: center;
+    width: 300px;
+    color: white;
+}
+
+.credits a{
+    text-decoration: none;
+    color: #00dfc0;
+}
+
+/*  About me Buttons From uiverse.io by @NorthFishHasNa */
+.about_me_contact button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #009c86;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    width: 130px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+   
+.about_me_contact button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.about_me_contact button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -15px;
+    transition: 0.5s;
+}
+
+.about_me_contact button:hover span {
+    padding-right: 15px;
+}
+
+.about_me_contact button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
